@@ -1,0 +1,57 @@
+# ---- 系统与缓存文件 ----
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+
+# ---- 数据与中间文件 ----
+data/*
+!data/README.md
+*.fastq
+*.bam
+*.sam
+*.mtx
+*.loom
+*.h5
+*.h5ad
+*.rds
+*.rda
+*.pkl
+*.npy
+*.npz
+*.ckpt
+*.pt
+*.pth
+*.zip
+*.tar.gz
+*.gz
+
+# ---- 结果文件（大文件） ----
+results/*.h5ad
+results/*.rds
+results/*.pkl
+results/*.npy
+results/*.npz
+results/*.ckpt
+results/*.pt
+results/*.pth
+
+# ---- 保留的小型结果文件 ----
+!results/**/*.csv
+!results/**/*.tsv
+!results/**/*.png
+!results/**/*.pdf
+
+# ---- 环境与临时文件 ----
+.env/
+*.log
+*.tmp
+
+# ---- IDE 或工具配置 ----
+.vscode/
+.Rproj
+.idea/
